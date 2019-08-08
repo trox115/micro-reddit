@@ -1,0 +1,18 @@
+
+<p>
+  Author: <%= @comment.user.name  %>    
+</p>
+<p>
+  Created: <%= @comment.created_at  %>    
+</p>
+<p>
+  Updated: <%= @comment.updated_at  %>    
+</p>
+
+<p>
+  Post: <%= @comment.post.title  %>    
+</p>
+
+<p><%= @comment.content %></p>
+
+<%= link_to "<< Back to comments List", comments_path %>

@@ -1,0 +1,12 @@
+<h1>All comments</h1>
+
+<ul id="comments">
+  <% @comments.each do |comment| %>
+    <li>
+      <%= link_to comment.content, comment_path(comment) %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "Go to Users", new_user_path %><br>
+<%= link_to "Go to Posts", posts_path %>
