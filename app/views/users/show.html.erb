@@ -1,0 +1,14 @@
+<h1><%= @user.name %></h1>
+<p>
+  Posts:
+  <ul>
+  <% @user.posts.each do |post| %>
+    <li> <%= link_to post.title, post_path(post) %></li>
+  <% end %>
+  </ul>
+</p>
+<p> E-mail: <%= @user.email %></p>
+
+
+
+<%= link_to "<< Back to Users List", users_path %>
