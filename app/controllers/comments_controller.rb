@@ -1,9 +1,11 @@
-class CommentsController < ApplicationController
-    def index
-    @comments = Comment.all
-    end
+# frozen_string_literal: true
 
-    def show
-        @comment= Comment.find(params[:id])
-    end
+class CommentsController < ApplicationController
+  def index
+    @comments = Comment.all
+  end
+
+  def show
+    @comment = Comment.find(params[:id])
+  end
 end
